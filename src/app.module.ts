@@ -2,6 +2,7 @@ import {MongooseModule} from '@nestjs/mongoose';
 import { Module } from '@nestjs/common';
 import { Pokemon2Module } from './pokemon2/pokemon2.module';
 import { CommonModule } from './common/common.module';
+import { SeedModule } from './seed/seed.module';
 @Module({
   imports: [
 
@@ -9,7 +10,9 @@ import { CommonModule } from './common/common.module';
 
     Pokemon2Module,
 
-    CommonModule
+    CommonModule,
+
+    SeedModule
 
   ],
 })
